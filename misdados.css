@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+    background-color: black
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+    padding: 35px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Laila', serif; 
+    font-size: 15px;
+}
+
+[class$="dado"] {
+  margin: 16px;
+  padding: 4px;
+  background-color: #f2e9e9;
+  width: 104px;
+  height: 104px;
+  border: 1px solid black;  
+  border-radius: 10%;
+    box-shadow: 3px 5px 8px #766969;
+}
+
+.primer-dado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.segundo-dado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.segundo-dado .redondas:nth-of-type(2){
+    align-self: flex-end;  
+}
+
+
+.tercer-dado{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.tercer-dado .redondas:nth-of-type(2){
+    align-self: center;
+}
+
+.tercer-dado .redondas:nth-of-type(3){
+    align-self: flex-end
+    
+}
+
+.cuarto-dado, .sexto-dado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuarto-dado .column, .sexto-dado .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quinto-dado{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.quinto-dado .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quinto-dado .column:nth-of-type(2){
+    justify-content: center;
+}
+
+
+.redondas {
+  width: 24px;
+  height: 24px;
+  border-radius: 90%;
+  margin: 4px;
+  background-color: #191919;
+}
