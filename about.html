@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="portafolio.css">
+        <link rel="stylesheet" href="/CSS/portafolio.css">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -32,8 +32,8 @@
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
-                                    <li class="active"><a href="index.html">Home</a></li>
-                                    <li class="dropdown">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active dropdown">
                                         <a href="about.html">Acerca de mí</a>
                                         <ul class="dropdown-menu">
                                         </ul>
@@ -49,20 +49,24 @@
             </nav>
 
             <div class="container">
-                <section>
+                <section class="seccion">
                     <article>
-                        <hgroup>
-                            <h1>SECTION</h1>
-                            <h2>ARTICLE</h2>
-                        </hgroup>
-
+                        <h1 class="titulo">ACERCA DE MÍ</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque numquam tempora recusandae consequatur illum dolorum ducimus, omnis nostrum quae excepturi, consectetur maxime modi accusantium nam. Voluptates magnam, ut mollitia sint!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis est itaque, eius? Voluptate consequatur praesentium, quae ratione temporaes ea asperiores minima similique ipsum placeat, illo. Repellat eveniet aperiam earum. Sed a minus vitae nesciunt nam aliquam culpa libero!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius alias inventore officiis recusandae beatae, ea libero animi at sunt! Quaerat animi amet nesciunt hic autem deleniti quo voluptas numquam minus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis labore, libero rem quibusdam pariatur! Corporis, aut nisi </p>
                     </article>
                 </section>
 
                 <aside>
-                    <h2>ASIDE</h2>
-
+                    <div class="fotoMini"><img src="fotiti.jpg" alt="David Romero Araez" class="miniFoto img-responsive"></div>
                 </aside>
+
+            </div>
+            <div class="pdf">
+                <a href="/CURRICULUMVITAE.jpg">
+                    <button id="boton" onclick="alert('¡Espero que os guste!')">Curriculum Vitae PDF</button>
+                </a>
 
             </div>
         </div>
