@@ -70,6 +70,7 @@ body {
 
 #myNavbar a:hover {
     font-size: 20px;
+    color: white;
 }
 
 .navegador{
@@ -97,7 +98,7 @@ section{
 
 /*ARTICULO CON EL CONTENIDO PRINCIPAL*/
 article{
-    background-color: rgba(53, 119, 131, 0.6);
+    background-color: rgba(93, 87, 87, 0.65);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -152,6 +153,11 @@ aside:nth-of-type(1){
     margin-left: -25px
 }
 
+#ico{
+    margin-right: 10px;
+    height: 3em
+
+}
 /* SECTION 1 WRAPPER (DIV GENERAL) */
 #wrapper1 {
     font-family: Roboto Slab;
@@ -166,13 +172,13 @@ aside:nth-of-type(1){
 }
 
 /*REGLA GENERAL SOBRE LOS TITULOS*/
-h1, h2, h3, h4, h5, h6 {
+.titulo, .titulo1 {
     font-family: Roboto Slab;
     margin-bottom: 10px;
     text-shadow: -5px -3px 1px #000;
 }
 
-h1 {
+.titulo {
     font-size: 75px;
     font-family: Oswald;
     letter-spacing: 5px;
@@ -181,17 +187,8 @@ h1 {
     word-wrap: break-word;
 }
 
-h2 {
-    font-size: 32px;
-    line-height: 36px;
-}
 
-h3 {
-    font-size: 26px;
-    line-height: 29px;
-}
-
-h4 {
+.titulo1 {
     font-size: 18px;
     letter-spacing: 4px;
     padding-bottom: 10px;
@@ -204,7 +201,7 @@ footer {
     background-color: #333;
     width: 100%;
     bottom: 0;
-    position: fixed;
+    position: static;
 }
 
 /*DIV DEL PIE DE PÁGINA*/
@@ -222,6 +219,7 @@ footer {
 }
 
 .pdf {
+    display: flex;
     justify-content: center;
     margin-top: 20px;
 }
@@ -233,16 +231,16 @@ footer {
 
 #boton {
 
-    background-color: rgba(1, 27, 139, 0.78);
-    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    background: -webkit-radial-gradient(#0ed826, #00400f);
+    background: -moz-radial-gradient(#0f0, #06f);    
     border: 2px solid black;
-    width: 80%;
+    width: 25%;
     -webkit-box-shadow: 0px 0px 2px 0px   #000000;
     -moz-box-shadow: 0px 0px 2px 0px       #000000;
-    box-shadow: 0px 0px 2px 0px #000000;
+    box-shadow: 1px 1px 1px 2px #000000;
 }
-
-
 
 
 .titulo{
@@ -251,22 +249,23 @@ footer {
 
 }
 
-a {
-    text-decoration:none;
+a, a #boton {
+    text-decoration:none !important;
     color: white;
+
+}
+
+
+a:hover, #pdf #boton:hover {
+    text-decoration:none;
+    color: blue;
+    font-size: 18px;
 }
 
 article p{
     margin-left: 5px;
     margin-right: 5px;
 }
-
-a:link   
-{   
-    text-decoration:none; 
-    list-style-type: none;
-    color: white !important;
-}  
 
 /*MEDIA QUERYS*/
 
@@ -287,7 +286,7 @@ a:link
 
 /*TITULOS, PARRAFOS, SOBRETODO DE LA HOME*/
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 676px) {
     #welcome h1{
         font-size: 30px;
     }
@@ -295,7 +294,7 @@ a:link
         font-size: 12px;
     }
     p{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 
@@ -311,7 +310,7 @@ a:link
         margin-bottom: 0;
     }
     #wrapper1{
-        height: 120%;
+        height: 145%;
         margin-top: 0;
         background: url('http://cdn.trazos-web.com/wp-content/uploads/2015/10/13-frameworks-de-php-para-desarrolladores-web-b-800x384.jpg');
         background-repeat: no-repeat;
@@ -323,8 +322,16 @@ a:link
         height: 150px;
         width: 140px;
     }
-     .titulo{
-        font-size: 25px;
+    .titulo{
+        font-size: 32px;
+        margin-top: 0;
 
+    }
+}
+
+/*REFERENCIA AL BOTON DE PDF*/
+@media screen and (max-width: 990px) {
+    #boton{
+        width: 78%;
     }
 }
