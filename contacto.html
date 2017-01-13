@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
-
+        <link rel="stylesheet" href="/CSS/portafolio.css">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="/librerias/sweetalert.css">
-        <link rel="stylesheet" href="/CSS/portafolio.css">
-        <script src="/librerias/sweetalert.min.js"></script>
         <title>David Romero Araez</title>
     </head>
 
@@ -32,51 +28,54 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="index.html" id="borde">Mi Portafolio</a>
+                                <a class="navbar-brand" id="borde" href="index.html">Mi Portafolio</a>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
                                     <li><a href="index.html">Home</a></li>
-                                    <li class="active dropdown">
+                                    <li class="dropdown">
                                         <a href="about.html">Acerca de mí</a>
                                         <ul class="dropdown-menu">
                                         </ul>
                                     </li>
                                     <li><a href="porta.html">Portafolio</a></li>
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contacto.html">Contacto</a></li>
+                                    <li class="active"><a href="contacto.html">Contacto</a></li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
             </nav>
+            <!-- TERMINA LA NAVBAR -->
 
-            <div class="container">
-                <section class="seccion">
-                    <article>
-                        <h1 class="titulo">ACERCA DE MÍ</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque numquam tempora recusandae consequatur illum dolorum ducimus, omnis nostrum quae excepturi, consectetur maxime modi accusantium nam. Voluptates magnam, ut mollitia sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis est itaque, eius? Voluptate consequatur praesentium, quae ratione temporaes ea asperiores minima similique ipsum placeat, illo. Repellat eveniet aperiam earum. Sed a minus vitae nesciunt nam aliquam culpa libero!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius alias inventore officiis recusandae beatae, ea libero animi at sunt! Quaerat animi amet nesciunt hic autem deleniti quo voluptas numquam minus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis labore, libero rem quibusdam pariatur! Corporis, aut nisi </p>
-                    </article>
-                </section>
-                <aside>
-                    <div class="fotoMini"><img src="fotiti.jpg" alt="David Romero Araez" class="miniFoto img-responsive"></div>
-                </aside>
-            </div>
-            <div class="pdf">
-                <a href="/CURRICULUMVITAE.jpg" id="boton">
-                    <img id="ico" src="negocios.png" alt="CurriculumVitae">Curriculum Vitae PDF
-                </a>
-            </div>
+            <!-- EMPIEZA EL HEADER -->
+            <header id="header" class="container-fluid">
+                <div class="contactame">
+                    <h1 id ="principal" class="titulo">CONTACTAME</h1>
+                    <div class="article">
+                    <p>
+                        Si te apetece contactarme puedes hacerlo escribiendo a: david.romero.araez.92@gmail.com. Si te quedan ganas de conocerme mejor, te recomiendo que visites:
+                    </p>
+                    <h2 class="h2"><img class="icono" src="github.png" alt="github">GitHub:</h2>
+                    <p class="frases"><a href="https://github.com/Davo92">- https://github.com/Davo92</a>
+                    </p>
+                    <h2 class="h2"><img class="icono" src="LinkedIn.svg" alt="linkedIn">LinkedIn:</h2>
+                    <p class="frases"><a href="https://www.linkedin.com/in/davidroar92">- https://www.linkedin.com/in/davidroar92</a></p>
+                    </div>
+                </div>
+            </header>
         </div>
-        <!-- TERMINA LA NAVBAR -->
+        <!-- TERMINA EL HEADER -->
+
+
         <!-- EMPIEZA EL FOOTER -->
+
         <footer id="footer" class="container-fluid">
-            <p class="piedepagina">COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
+            <p>COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
         </footer>
+
         <!-- TERMINA EL FOOTER -->
-        <script src="/js/alert.js"></script>
+        <script src="JS/home.js"></script>
     </body>
 </html>
