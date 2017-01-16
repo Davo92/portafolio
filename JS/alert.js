@@ -1,3 +1,4 @@
+//RECORDATORIO PARA ACABAR DE CONCRETAR SWEETALERT
 $('#boton').click(EventoAlert);
 
 function EventoAlert(event) {
@@ -10,12 +11,6 @@ function EventoAlert(event) {
   showConfirmButton: false
 });
     
-   setTimeout(function(){ window.location = this.href;}, 3000);
+   setTimeout(function(){ window.location = "/CURRICULUMVITAE.jpg";}, 3000);
         
-    /*swal({
-  title: "Bienvenido a mi Curriculum Vitae",
-  text: "¡Espero que os guste!.",
-  timer: 4000,
-  showConfirmButton: false
-});*/
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/CSS/portafolio.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>David Romero Araez</title>
+    </head>
+
+
+    <body>
+
+        <!-- EMPIEZA LA NAVBAR -->
+        <div id="wrapper1" class="container-fluid">
+            <nav class="navigation">
+                <div class="left">
+                    <div class="logo">DAVID ROMERO ARAEZ</div>
+                    <div class="sublogo">Desarrollador web / Front-End Developer</div>
+                </div>
+                <div class="right">
+                    <nav class="navbar navbar-inverse navegador">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" id="borde" href="index.html">Mi Portafolio</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropdown">
+                                        <a href="about.html">Sobre mí</a>
+                                        <ul class="dropdown-menu">
+                                        </ul>
+                                    </li>
+                                    <li id="active"><a href="portafolio.html">Portafolio</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contacto.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </nav>
+        
+         <div class="panel-group accordion">
+                <h1 id ="principal" class="titulo">PORTAFOLIO</h1>
+                <div class="panel panel-default lenguajes" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <!--INDICA QUE SE HARA COLAPSE 'ACORDEON' EN EL SIGUIENTE TRAMO -->
+                    <div class="panel-heading"> <!-- LE DAMOS EL TITULO AL ACORDEON Y SERA LO DE ACONTINUACION-->
+                        <div class="containerGeneral container-fluid">
+                            <div id="partidos" class="row">
+                                <div class="col-xs-12">
+                                    <h2 class="tit2">DADOS CON FLEXBOX</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p class="col-xs-3"></p>
+                        <a href="#demo" class="botonAcordeon btn btn-info col-xs-6" data-toggle="collapse">Información</a> <!--TEXTO QUE INDICA QUE HACER CON EL ACORDEON-->
+                        <p class="col-xs-3"></p>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse "> <!--ESTO ESTARA  INVISIBLE HASTA QUE NO ABRAMOS EL ACORDEON, Y ESTE ES SU CONTEXTO -->
+                        <div class="panel-body">
+
+
+                            <div class="table-container">
+                                <table width="100%">
+
+                                    <tr class="even">
+                                        <h1 class="datosPartido">Datos del lenguaje</h1>
+                                    </tr>
+                                    <tr>
+                                        <p>Principalmente, és el esqueleto de nuestra web. Un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.</p>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer id="footer" class="container-fluid">
+            <p class="piedepagina">COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
+        </footer>
+        </div>
+    </body>
+</html>
