@@ -1,0 +1,95 @@
+body { 
+    background-image: url("futbol-generic-entry-point.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+} 
+
+#firstphoto {
+    width: 95%;
+    margin-left: 30px;
+}
+
+h2 {
+    position: absolute;
+    top: 70px;
+    left: 35%;
+    font-size: 50px;
+    font-family: cursive;
+    color: midnightblue;
+    border-bottom: 3px solid white;
+    
+    
+}
+#logo {
+    position: absolute;
+    top: 370px;
+    right: 90px;
+    height: 200px;   
+    width: 200px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#camiseta {
+    margin-left: 30px;
+    padding: 30px;
+}
+    
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 90px;
+    list-style-type: none;
+    }
+
+article {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: -450px;
+    margin-left: 30%;
+    position: absolute;
+}
+
+h3, p {
+    margin-left: 10px;
+}
+
+.mes {
+    background-color:rgba(127, 255, 212, 0.34);
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: -10px;
+    border-radius: 1em;
+    text-align: center;
+    font-size: 25px
+    
+}
+
+.temario {
+    background-color: rgba(255, 228, 196, 0.5);
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10em;
+    font-size: 20px;
+}
+
+li  { 
+    font-size: 30px;
+    background-color: lightgreen;
+    border-radius: 2em; 
+    border: 2px solid black;
+    padding: 8px;
+    
+}
+
+li a:link, li a:visited {
+    text-decoration: none
+}
+
+#home {
+    background-color: silver;
+}

@@ -1,0 +1,16 @@
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+li a:link, li a:visited {
+    text-decoration: none
+}
+
+#header {
+    margin:auto;
+    width:500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

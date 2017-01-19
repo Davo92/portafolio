@@ -1,0 +1,100 @@
+#photo { display: block;
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        margin-top: 60px;
+        }
+
+#logo {
+	    height: 120px;
+	    width: 120px;
+        border-radius: 100%;
+        border: 2px solid black;
+        margin-left: 40px;
+        margin-top: 10px;
+        z-index: auto; 
+        left: 60em;
+        top: 415px;        
+        
+}
+
+h2  {
+    list-style: none; 
+    text-shadow: 2px 2px 4px white;
+    padding:0;
+    display: block;
+    background-color: green;
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px;
+    font-size: 35px;
+}
+
+div.contenedor {
+    display: inline;
+}
+
+nav {
+    top: 10%;
+    right: 1%;
+    position: absolute;
+    color: snow;
+    
+    
+    
+}
+    
+h1 { height: 120px;
+        margin-right: 50px;
+        margin-top: 10px;
+        position: absolute;
+        z-index: -1; 
+        left: 1em;
+        top: 5px;
+        z-index:-1;
+        font-family: Verdana;
+        color: black;
+    
+}
+
+#style-ul li {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+}
+
+nav li a:link, nav a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    padding: 5px;
+    color: snow;
+    
+}
+ul {
+    display:inline;
+    border-color: black;
+    margin-right: 60px;
+ }
+
+#home {
+    background-color: mediumpurple;
+}
+
+#about {
+        background-color: blue;
+}
+
+#contact {
+    background-color: blue;
+}
+
+article { margin-left: 200px;
+    position: absolute;
+    top:100%
+    
+}

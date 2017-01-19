@@ -28,7 +28,7 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" id="borde" href="index.html">Mi Portafolio</a>
+                                <a class="navbar-brand" id="borde" href="index.html">Menú</a>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav">
@@ -39,7 +39,7 @@
                                         </ul>
                                     </li>
                                     <li id="active"><a href="portafolio.html">Portafolio</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog.html">Conocimientos</a></li>
                                     <li><a href="contacto.html">Contacto</a></li>
                                 </ul>
                             </div>
@@ -47,45 +47,134 @@
                     </nav>
                 </div>
             </nav>
-        
-         <div class="panel-group accordion">
-                <h1 id ="principal" class="titulo">PORTAFOLIO</h1>
-                <div class="panel panel-default lenguajes" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <!--INDICA QUE SE HARA COLAPSE 'ACORDEON' EN EL SIGUIENTE TRAMO -->
-                    <div class="panel-heading"> <!-- LE DAMOS EL TITULO AL ACORDEON Y SERA LO DE ACONTINUACION-->
-                        <div class="containerGeneral container-fluid">
-                            <div id="partidos" class="row">
-                                <div class="col-xs-12">
-                                    <h2 class="tit2">DADOS CON FLEXBOX</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <p class="col-xs-3"></p>
-                        <a href="#demo" class="botonAcordeon btn btn-info col-xs-6" data-toggle="collapse">Información</a> <!--TEXTO QUE INDICA QUE HACER CON EL ACORDEON-->
-                        <p class="col-xs-3"></p>
+            <div class="panel-group" id="accordion">
+                <h1 id ="principal" class="titulo">MIS PROYECTOS</h1>
+                <p> </p>
+                <div class="panel panel-default lenguajes">
+                    <div class="panel-heading">     
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                Primera web en HTML y CSS</a>
+                        </h4>
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse "> <!--ESTO ESTARA  INVISIBLE HASTA QUE NO ABRAMOS EL ACORDEON, Y ESTE ES SU CONTEXTO -->
+                    <div id="collapse1" class="panel-collapse collapse">
                         <div class="panel-body">
-
-
-                            <div class="table-container">
-                                <table width="100%">
-
-                                    <tr class="even">
-                                        <h1 class="datosPartido">Datos del lenguaje</h1>
-                                    </tr>
-                                    <tr>
-                                        <p>Principalmente, és el esqueleto de nuestra web. Un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.</p>
-                                    </tr>
-                                </table>
+                            <div class="logcent">
+                                <img class="img-responsive logo html5" src="negocios.png">     
                             </div>
+                            <p>Primera web echa con HTML y CSS, donde aprendí las bases para el desarrollo de una página web. Fue un trabajo en el curso intensivo realizado, donde era la primera parte, haciendo un "Hola, mundo" para darme soltura, y ver las herramientas necesarias para trabajar en una web con unos mínimos.</p>
+                            <button class="colorear">
+                                <a href="/proyectos/primeraWeb/home.html">Link del proyecto</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default lenguajes">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                DADOS ECHOS CON FLEXBOX</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="logcent">
+                                <img class="img-responsive logo html5" alt="CSS3" src="imagenes/dados.png">     
+                            </div>
+                            <p>Una de las primeras necesidades, era el poder colocar y mover a mi antojo los objetos que quería ordenar, sin tanta necesidad de márgenes, poder suprimir el "float", y hacer que un objeto, pase a otra posición, poder ordenar, hacer tablas adecuadamente, etc.. Sin duda alguna, entre grillas y flexbox, me quedo con el último, y de ahí este proyecto, para poder coger soltura en el tema.</p>
+                            <button class="colorear">
+                                <a href="/proyectos/dadosFlexbox/misdados.html">Link del proyecto</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default lenguajes">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                SEMÁNTICA DE HTML5 CON FLEXBOX Y GRILLAS</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="logcent">
+                                <img class="img-responsive logo html5" src="js.png">     
+                            </div>
+                            <p>Después de observar mi primer proyecto, parece que me quedé atrás hablando de HTML5, así que decidí actualizarme y coger bien las nuevas etiquetas, para una organización, optimización y que las arañas puedan rastrear mejor mi código, aprendí bien la semántica. Con este proyecto podemos ver la organización de HTML5, ordenado con flexbox y sistema de grillas. Aparte, tengo en cuenta los <!--<hgroup>--> deben de estar sobretodo al comienzo, si juntamos varios, por ejemplo: h1 + h2 = hgroup</p>
+                            <button class="colorear">
+                                <a href="/proyectos/semanticaHTMLflexgrillas/html5.html">Link del proyecto</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default lenguajes">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                PÁGINA DE REGISTRO, INPUTS, RADIOS CON JavaScript
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="logcent">
+                                <img class="img-responsive logo html5" src="js.png">     
+                            </div>
+                            <p>Cuando acabé la primera web en HTML y CSS, el cliente pidió una página de registro, para poder aligerar el procedimiento. 
+                                Agregar botones input, y poniendo con JS, los requisitos mínimos para este registro. Por ejemplo, que el número de teléfono, sean números y tenga el mínimo de número que contienen, o que el e-mail introducido, contenga un @.. y acabe en .com .co .es .net, y así impedir a gente que pretenda poner datos irreales. También poner un radio, que tiene como misión, cancelar dos elecciones radio, al ser esta pulsada, ya que no es necesario pedir la talla de la ropa, si ellos mismos ya tienen la equipación. Por último, el saber crear una API de googleMaps, e introducir el iframe.</p>
+                            <button class="colorear">
+                                <a href="/proyectos/RegistroJS/registration.html">Link del proyecto</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default lenguajes">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                WEB RESPONSIVE</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="logcent">
+                                <img class="img-responsive logo html5" src="imagenes/responsive.png">     
+                            </div>
+                            <p>
+                                Tras ir acabando los primeros proyectos,lo correcto era aprender a hacerlo también para un móbil, o tablet, haciendo así mi primera web responsive.
+                                Con algún que otro detalle como un chat interno ( sin estar en una base de datos 'no se guardan los mensajes solo se muestran tras escribirlo' ). Alguna acción con JS al dar click sobre algún boton, agregar un carrusell de fotos, y hacer unos estilos más correctos, serios y dinámicos.</p>
+                            <button class="colorear">
+                                <a href="/proyectos/webResponsive/index.html">Link del proyecto</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default lenguajes">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                SINGLE PAGE
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="logcent">
+                                <img class="img-responsive logo html5" src="js.png">     
+                            </div>
+                            <p>Al ver el resultado en un teléfono, y en diferentes resoluciones, descubrí algo muy interesante, y que está muy de moda para páginas con poco contenido, el cual no necesitaria hacer scroll en pantalla, llamado "Single Page", una manera de introducir todo en el mismo html y que sean separadas entre sí, con indicaciones sencillas, teniendo solo que deslizarte hacia abajo o hacia los lados para poder ver todo el contenido. Después de este proyecto aprendí que son y que pueden hacer las "media querys", algo que me hubiera ayudado mucho para poder dejar más afinado este proyecto.</p>
+                            <button class="colorear">
+                                <a href="/proyectos/Singlepage/examples/singlePage.html">Link del proyecto</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        <footer id="footer" class="container-fluid">
-            <p class="piedepagina">COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
-        </footer>
+            <br>
+            <br>
+            <footer id="footer" class="container-fluid">
+                <p class="piedepagina">COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
+            </footer>
         </div>
     </body>
 </html>

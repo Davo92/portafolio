@@ -1,0 +1,82 @@
+
+            #senatedata {
+                margin: 24px;
+            }
+            tr:nth-child(2n) {
+                background-color: #a6bcbe;
+            }
+            td {
+                font-size: 15px;
+            }
+
+            #titulos {
+                font-family: cursive;
+                background-color: rgba(0, 0, 0, 0.55);
+            }
+
+            .titles {
+                font-size: 25px;
+                color: aliceblue;
+            }
+
+            img {
+                margin-left: 30px;
+                padding: 2px;
+                margin-bottom: 10px;
+
+            }
+            div, img {
+                margin-top: 20px;
+                margin-right: 10px;
+                border-radius: 20px;
+
+            }
+
+            .sobre {
+                height: 30px;
+                width: 30px;
+                margin-bottom: 20px;
+                margin-right: 10px;
+            }
+
+            #barranavegacion {
+                background-color: black;
+            }
+
+            li { background-color: rgba(185, 176, 176, 0.8);
+                border: 1px solid rgba(145, 135, 135, 0.31);
+                border-radius: 5px;
+            }
+            footer {
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding: 20px;
+                border-top-right-radius: 50px;
+                border-top-left-radius: 50px;
+            }
+
+            article {
+                margin: 24px;
+            }
+
+            h1 {
+                font-family: Amaranth;
+                border-bottom: 2px solid black;
+                font-size: 50px;
+            }
+
+            p {
+                font-family: Amaranth;
+                font-size: 18px;
+            }
+            
+            h2 {
+                border-bottom: 2px solid black; 
+                font-family: cursive;    
+            }
+            
+            #party_filter, #state_filter {
+    
+                margin-left: 10px;
+}

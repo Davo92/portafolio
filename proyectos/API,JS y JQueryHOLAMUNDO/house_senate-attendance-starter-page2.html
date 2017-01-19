@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="data.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>//document.getElementById('senatedata').innerHTML = JSON.stringify(data,null,2);</script>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    </head>
+
+
+    <body onload="rellenarTabla() + llenarTabla() + completarTabla()">
+        <div class="container">
+            <div id="barranavegacion">
+                <img src="Logo.jpg" class="img-responsive" style="margin-top:-15px;">
+                <a href="mailto:info@tgif.net" class="pull-right"><img class="sobre" src="sobre.jpg">info@tgif.net</a>
+
+            </div>
+
+            <ul class="nav nav-pills">
+                <a href="#" class="navbar-brand"></a>
+                <li><a href="home-data.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Congress 113<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">                  <a  a href="house-data.html"><li>House</li></a>
+                        <a  a href="senate-data.html"><li>Senate</li></a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Attendance<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">                  <a  a href="house_senate-attendance-starter-page2.html"><li>House</li></a>
+                        <a  a href="senate_house-attendance-starter-page.html"><li>Senate</li></a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Party Loyalty<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">                  <a  a href="house_senate-party-loyalty-starter-page2.html"><li>House</li></a>
+                        <a  a href="senate_house-party-loyalty-starter-page.html"><li>Senate</li></a>
+                    </ul>
+                </li>
+            </ul>      
+
+
+            <header>            
+                <div>
+                </div>
+            </header>
+            <!--Table container-->
+            <div>
+                <h1>Attendance</h1>
+                <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+                <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+
+                <h2>House at a glance</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>Number of Reps</th>
+                            <th>% Voted with Prty</th>            </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Republican</td>
+                            <td id="reps_votes">--</td>
+                            <td id="reps_pct">--</td>
+                        </tr>
+                        <tr>
+                            <td>Democrat</td>
+                            <td id="demo_votes">--</td>
+                            <td id="demo_pct">--</td>
+                        </tr>
+                        <tr>
+                            <td>Independent</td>
+                            <td id="indep_votes">--</td>
+                            <td id="indep_pct">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Least Engaged (Bottom 10% Attendance)</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Missed Votes</th>
+                            <th>% Missed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="votosPerdidos">
+                    </tbody>
+                </table>
+
+                <h2>Most Engaged (Top 10% Attendance)</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Missed Votes</th>
+                            <th>% Missed</th>
+                        </tr>
+                    </thead>
+                    <tbody id="votosPerdidos2">
+
+                    </tbody>
+                </table>
+                <footer>
+                    <p id="derechos">© 2016 TGIF | All Rights Reserved.</p>
+                </footer>
+
+            </div> 
+
+            <script src="NYT-congress-113-house.js"></script>
+            <script language="javascript" src="stadistics.js"></script>
+            <script language="javascript" src="house_senate-attendance-starter-page2.js"></script>
+        </div>
+    </body>
+</html>

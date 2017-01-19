@@ -1,0 +1,55 @@
+#firstphoto {
+	position: left;
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+	border: 2px solid black;
+	margin-left: 5px;
+    float: left;
+    margin-right: 50px;
+}
+
+
+h1 {  list-style: none; 
+    text-shadow: 2px 2px 4px white;
+    padding:0;
+    display: block;
+    background-color: green;
+     }
+
+h2 {
+    margin-left: 20px;
+    font-family: verdana;
+    font-style: italic
+
+}
+
+#photo { position: left;   
+         margin-left: 5px;
+         float: left;
+         margin-right: 30px;
+        height: 360px;
+}
+
+li {
+    font-style: cursive;
+    display: inline;
+    margin-right: 30px;
+    margin-left: 20px;
+    
+}
+
+nav{
+    background-color: greenyellow;
+    color: aqua;
+    
+}
+
+p { 
+    margin-left: 50px;
+}
+
+div {
+    display: inline-block;
+    width: 70%;
+}

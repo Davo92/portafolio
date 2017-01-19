@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Page NYSL single Page</title>
+        <meta name="description" content="fullPage fixed header and footer." />
+        <meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+        <meta name="Resource-type" content="Document" />
+
+        <link rel="stylesheet" type="text/css" href="../dist/main.css" />
+        <link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
+
+        <script type="text/javascript" src="../jquery.fullPage.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    anchors: ['firstPage', 'secondPage', '3rdPage'],
+                    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+                    css3: true
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+
+
+
+
+
+
+        <div id="header" class="container-fluid">
+            <div id="titulo" class="row titul">
+                <div class="col-xs-2">
+                    <img class="img-responsive" id="logo" src="nysl_logo.png">                   
+                </div>
+                <div class="col-xs-10">
+                    <img class="img-responsive" id="head" src="fototask2.jpg">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="footer">
+
+            <p id="derechos">© 2016 TGIF | All Rights Reserved.</p>
+        </div>
+
+
+
+
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <div class="intro">
+                    <br>
+                    <br>
+                    <div class="container-fluid">
+                        <a href="index.html">
+                            <div id="home1" class="col-xs-4 pagPrincipal">
+                                <div class="col-xs-4">
+                                    <img src="casa.png" class="responsive fotoIndex">
+                                </div>
+
+                            </div>
+                        </a>
+
+
+
+
+                        <a href="home.html">
+                            <div id="home2" class="col-xs-4 pagPrincipal">
+                                <div class="col-xs-4">
+                                    <img src="gps.png" class="responsive fotoIndex">
+
+                                </div>
+                            </div>
+                        </a>
+
+
+
+
+                        <a href="photos.html">
+                            <div id="home3" class="col-xs-4 pagPrincipal">
+                                <div class="col-xs-4">
+                                    <img src="foto.png" class="responsive fotoIndex">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                    <div class="general">
+                        <div class="general col-xs-4">
+                            <p class="menuPrincipal"><strong>HOME</strong></p>
+                        </div>
+
+                        <div class="general col-xs-4">
+                            <p class="menuPrincipal"><strong>EVENTS</strong></p>
+                        </div>
+
+                        <div class="general col-xs-4">
+                            <p class="menuPrincipal"><strong>PHOTOS & CONTACT</strong></p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="fotoGeneral col-xs-12">
+
+                        <div id="posiLogo">
+                            <img src="nysl_logo.png" class="img-responsive" id="fotiprin">
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <div class="slide" id="slide1">
+                    <div class="intro">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div>
+                            <div>
+                                <img src="../examples/arriba.png">
+                            </div>
+
+                            <div>
+                                <h1>HOME</h1>
+                            </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div>
+                            <div>
+
+                                <h1>EVENTS <img src="../examples/derecha.png"></h1>
+                            </div>
+                        </div>
+
+
+                        <br>
+                        <br>
+                        <br>
+
+                        <div>
+                            <div>
+                                <h1>CONTACT</h1>
+                            </div>
+                            <div>
+                                <img src="../examples/abajo.png">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="slide" id="slide2">
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="doble col-xs-12">
+
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default partidosColor" data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <!--INDICA QUE SE HARA COLAPSE 'ACORDEON' EN EL SIGUIENTE TRAMO -->
+                                <div class="panel-heading partidosColor"> <!-- LE DAMOS EL TITULO AL ACORDEON Y SERA LO DE ACONTINUACION-->
+                                    <div id="containerGeneral" class="container-fluid">
+                                        <div id="partidosNombres" class="row">
+                                            <div class="nombres col-xs-5">
+                                                <div class="responsive nombres u">
+                                                    U1                   
+                                                </div>
+                                            </div>
+                                            <div class="responsive nombres col-xs-2"><p>15.45h</p>
+
+                                            </div>
+                                            <div class="col-xs-5 nombres">
+                                                <div class="responsive nombres u">
+                                                    U4
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row partidos">
+                                            <div class="escudos col-xs-5">
+                                                <img class="img-responsive logo" id="logo2" src="nysl_logo.png">                   
+                                            </div>
+                                            <div id="vs" class="responsive col-xs-2 vs">
+                                                VS
+                                            </div>
+                                            <div class="col-xs-5 escudos">
+                                                <img class="img-responsive logo" id="logo3" src="team.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p class="col-xs-3"></p>
+                                    <a href="#demo" class="botonAcordeon btn btn-info col-xs-8" data-toggle="collapse">Ver Más</a> <!--TEXTO QUE INDICA QUE HACER CON EL ACORDEON-->
+                                    <p class="col-xs-3"></p>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse "> <!--ESTO ESTARA  INVISIBLE HASTA QUE NO ABRAMOS EL ACORDEON, Y ESTE ES SU CONTEXTO -->
+                                    <div class="panel-body">
+
+
+                                        <div class="table rejas">
+                                            <table width="50%">
+
+                                                <tr class="even">
+                                                    <h2 class="datosPartido">Más Datos</h2>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"><strong> Fecha y Hora:</strong> </td>
+                                                    <td class="subr"> 09.Noviembre.2016, 15.45h </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"> <strong> Localización:</strong>  </td>
+                                                    <td class="subr"> C/Walaby nº42 Sidney, 08480 </td>
+                                                </tr>
+                                                <div class="even">
+                                                    <tr>
+                                                        <td class="dates"><strong> Ubicación: </strong> <a href="https://www.google.com/maps/d/u/0/embed?mid=1SHBam-lmw6f73NZd7x7qJs7Rfqc">
+                                                                <img src="../examples/marcador-de-posicion.png" class="img-responsive"></a></td>
+                                                        
+                                                            
+                                                        
+                                                    </tr>
+
+                                                </div>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <div class="panel-group accordion">
+                            <div class="panel panel-default partidosColor" data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <!--INDICA QUE SE HARA COLAPSE 'ACORDEON' EN EL SIGUIENTE TRAMO -->
+                                <div class="panel-heading"> <!-- LE DAMOS EL TITULO AL ACORDEON Y SERA LO DE ACONTINUACION-->
+                                    <div class="container-fluid containerGeneral">
+                                        <div class="row partidosNombres">
+                                            <div class="nombres col-xs-5">
+                                                <div class="responsive nombres u">
+                                                    U1                   
+                                                </div>
+                                            </div>
+                                            <div class="responsive nombres col-xs-2 t"><p>15.45h</p>
+
+                                            </div>
+                                            <div class="col-xs-5 nombres">
+                                                <div class="responsive nombres u">
+                                                    U4
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row partidos">
+                                            <div class="escudos col-xs-5">
+                                                <img class="img-responsive logo" src="images.png">                   
+                                            </div>
+                                            <div class="responsive col-xs-2 vs">
+                                                VS
+                                            </div>
+                                            <div class="col-xs-5 escudos">
+                                                <img class="img-responsive logo" src="nysl_logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <p class="col-xs-3"></p>
+                                    <a href="#demo"  class="btn btn-info col-xs-8 botonAcordeon" data-toggle="collapse">Ver Más</a> <!--TEXTO QUE INDICA QUE HACER CON EL ACORDEON-->
+                                    <p class="col-xs-3"></p>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse collapse1"> <!--ESTO ESTARA  INVISIBLE HASTA QUE NO ABRAMOS EL ACORDEON, Y ESTE ES SU CONTEXTO -->
+                                    <div class="panel-body">
+
+
+                                        <div class="table rejas">
+                                            <table width="50%">
+
+                                                <tr class="even">
+                                                    <h2 class="datosPartido">Más Datos</h2>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"><strong> Fecha y Hora:</strong> </td>
+                                                    <td class="subr"> 09.Noviembre.2016, 15.45h </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"> <strong> Localización:</strong>  </td>
+                                                    <td class="subr"> C/Walaby nº42 Sidney, 08480 </td>
+                                                </tr>
+                                                <div class="even">
+                                                   <tr>
+                                                        <td class="dates"><strong> Ubicación: </strong> <a href="https://www.google.com/maps/d/u/0/embed?mid=1SHBam-lmw6f73NZd7x7qJs7Rfqc">
+                                                                <img src="../examples/marcador-de-posicion.png" class="img-responsive"></a></td>
+                                                        
+                                                            
+                                                        
+                                                    </tr>
+
+
+                                                </div>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="doble col-xs-12">
+
+                        <div class="panel-group accordion">
+                            <div class="panel panel-default partidosColor" data-toggle="collapse" data-parent="#accordion" href="#collapse3"> <!--INDICA QUE SE HARA COLAPSE 'ACORDEON' EN EL SIGUIENTE TRAMO -->
+                                <div class="panel-heading"> <!-- LE DAMOS EL TITULO AL ACORDEON Y SERA LO DE ACONTINUACION-->
+                                    <div class="container-fluid containerGeneral">
+                                        <div class="row partidosNombres">
+                                            <div class="nombres col-xs-5">
+                                                <div class="responsive nombres u">
+                                                    U1                   
+                                                </div>
+                                            </div>
+                                            <div class="responsive nombres col-xs-2 t"><p>15.45h</p>
+
+                                            </div>
+                                            <div class="col-xs-5 nombres">
+                                                <div class="responsive nombres u">
+                                                    U4
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row partidos">
+                                            <div class="escudos col-xs-5">
+                                                <img class="img-responsive logo" src="nysl_logo.png">                   
+                                            </div>
+                                            <div class="responsive col-xs-2 vs">
+                                                VS
+                                            </div>
+                                            <div class="col-xs-5 escudos">
+                                                <img class="img-responsive logo" src="psg-logo1.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="col-xs-3"></p>
+                                    <a href="#demo"  class="btn btn-info col-xs-8 botonAcordeon" data-toggle="collapse">Ver Más</a> <!--TEXTO QUE INDICA QUE HACER CON EL ACORDEON-->
+                                    <p class="col-xs-3"></p>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse collapse1"> <!--ESTO ESTARA  INVISIBLE HASTA QUE NO ABRAMOS EL ACORDEON, Y ESTE ES SU CONTEXTO -->
+                                    <div class="panel-body">
+
+
+                                        <div class="table rejas">
+                                            <table width="50%">
+
+                                                <tr class="even">
+                                                    <h2 class="datosPartido">Más Datos</h2>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"><strong> Fecha yHora:</strong> </td>
+                                                    <td class="subr"> 09.11.2016, 15.45h </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"> <strong> Dirección:</strong>  </td>
+                                                    <td class="subr"> C/Walaby nº42 Sidney, 08480 </td>
+                                                </tr>
+                                                <div class="even">
+
+                                                    <tr>
+                                                        <td class="dates"><strong> Ubicación: </strong> <a href="https://www.google.com/maps/d/u/0/embed?mid=1SHBam-lmw6f73NZd7x7qJs7Rfqc">
+                                                                <img src="../examples/marcador-de-posicion.png" class="img-responsive"></a></td>
+                                                        
+                                                            
+                                                        
+                                                    </tr>
+                                                </div>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <div class="panel-group accordion">
+                            <div class="panel panel-default partidosColor" data-toggle="collapse" data-parent="#accordion" href="#collapse4"> <!--INDICA QUE SE HARA COLAPSE 'ACORDEON' EN EL SIGUIENTE TRAMO -->
+                                <div class="panel-heading"> <!-- LE DAMOS EL TITULO AL ACORDEON Y SERA LO DE ACONTINUACION-->
+                                    <div class="container-fluid containerGeneral">
+                                        <div class="row partidosNombres">
+                                            <div class="nombres col-xs-5">
+                                                <div class="responsive nombres u">
+                                                    U1                   
+                                                </div>
+                                            </div>
+                                            <div class="responsive nombres col-xs-2 h"><p>15.45h</p>
+
+                                            </div>
+                                            <div class="col-xs-5 nombres">
+                                                <div class="responsive nombres u">
+                                                    U4
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row partidos">
+                                            <div class="escudos col-xs-5">
+                                                <img class="img-responsive logo" src="otroteam.jpg">                   
+                                            </div>
+                                            <div class="responsive col-xs-2 vs">
+                                                VS
+                                            </div>
+                                            <div class="col-xs-5 escudos">
+                                                <img class="img-responsive logo" src="nysl_logo.png">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="col-xs-3"></p>
+                                    <a href="#demo"  class="btn btn-info col-xs-8 botonAcordeon" data-toggle="collapse">Ver Más</a> <!--TEXTO QUE INDICA QUE HACER CON EL ACORDEON-->
+                                    <p class="col-xs-3"></p>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse collapse1"> <!--ESTO ESTARA  INVISIBLE HASTA QUE NO ABRAMOS EL ACORDEON, Y ESTE ES SU CONTEXTO -->
+                                    <div class="panel-body">
+
+
+                                        <div class="table rejas">
+                                            <table width="50%">
+
+                                                <tr class="even">
+                                                    <h2 class="datosPartido">Más Datos</h2>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"><strong> Fecha y Hora:</strong> </td>
+                                                    <td class="subr"> 09.Noviembre.2016, 15.45h </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="dates"> <strong> Localización:</strong>  </td>
+                                                    <td class="subr"> C/Walaby nº42 Sidney, 08480 </td>
+                                                </tr>
+                                                <div class="even">
+
+                                                   <tr>
+                                                        <td class="dates"><strong> Ubicación: </strong> <a href="https://www.google.com/maps/d/u/0/embed?mid=1SHBam-lmw6f73NZd7x7qJs7Rfqc">
+                                                                <img src="../examples/marcador-de-posicion.png" class="img-responsive"></a></td>
+                                                        
+                                                            
+                                                        
+                                                    </tr>
+                                                </div>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+        
+
+
+
+
+
+            </div>
+            <div class="section" id="section2">
+                <div class="intro">
+                    <div class="container">
+
+                        <h1 class="carru">CONTACT</h1>
+                        <div id="entrada">
+                            <p class="col-xs-12">
+                                If you need any help, you can contact us via the internet leaving us an email, or calling the directive, and we will attend to you as soon as possible.</p>
+                        </div>    
+
+                        <div class="llamada">
+                            <p>
+                                To call the NYSL offices directly:</p>
+                        </div>
+                        <div class="telf">
+
+                            <a href="tel:+600600600"><button class="button boton" onclick="myFunction2()"><img src="tecnologia.png"> Call the NYSL offices </button></a>
+
+                            <p id="demo"></p>
+
+                        </div>
+
+
+                        <br>
+                        <div class="llamada">
+                            <p>
+                                To send an email and contact NYSL employees:</p>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:nysl@gmail.com"><button class="button boton2" onclick="myFunction3()"><img id="sobre" src="negocios.png"> Send an email to NYSL offices: </button></a>
+
+                            <p id="demo2"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDQ2FZYlkfNsjKNypEPvG-NGutpJhMXNsM",
+    authDomain: "nysl-singlepage.firebaseapp.com",
+    databaseURL: "https://nysl-singlepage.firebaseio.com",
+    storageBucket: "nysl-singlepage.appspot.com",
+    messagingSenderId: "372090949135"
+  };
+  firebase.initializeApp(config);
+</script>
+        <script src="../vendors/home.js"></script>
+    </body>
+</html>

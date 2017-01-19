@@ -1,0 +1,113 @@
+* { margin: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 200px;
+    }
+.seccion_info h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+#logo {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    height: 100px;   
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#firstphoto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+#firstphoto img {
+    height: 50%;
+    width: 70%;
+}
+
+body { 
+    background-image: url("futbol-generic-entry-point.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scroll {
+    height: 400px;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 17px;
+    
+}
+
+.seccion_info h3 {
+  font-style: italic;
+}
+table {
+  margin-bottom: 20px;
+}
+.September th, .October th {
+  text-decoration: underline;
+}
+th, td {
+  width: 15%;
+}
+.September tr td:nth-child(1) {
+  padding-right: 11%;
+  text-align: center;
+}
+.September th:first-child, .October th:first-child {
+  text-transform: uppercase;
+  padding-left: 2%;
+}
+.October tr td:nth-child(1) {
+  padding-right: 11%;
+  text-align: center;
+}
+.game_location {
+  width: 90%;
+}
+.anotacion {
+  text-decoration: underline;
+  font-style: italic;
+}
+.extra_info p {
+  text-decoration: none;
+}
+.titulo_info {
+  font-weight: bold;
+}
+.extra_info p:nth-child(4), .extra_info p:nth-child(5) {
+  display: inline-block;
+}
+.extra_info p:nth-child(4) {
+  margin-right: 25%;
+}
+.extra_info p:nth-child(2) {
+  width: 85%;
+}
+.mapas {
+  width: 100%;
+  margin-top: 4%;
+}
+.maps_half {
+  width: 50%;
+  float: left;
+  margin-bottom: 4%;
+}
+.maps_half iframe {
+  width: 90%;
+  height: 300px;
+  border: 0;
+  box-shadow: 4px 4px 2px #E0E0E0;
+}

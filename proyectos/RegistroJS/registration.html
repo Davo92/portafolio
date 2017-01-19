@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>About NYSL</title>
+        <link rel="stylesheet" href="style6.css">
+        <script language="javascript" src="validate.js"></script>
+    </head>
+    <body>
+      <h1>REGISTRATION</h1>
+       <div class="global">
+       <div id="firstphoto">
+       <img  src="fototask2.jpg">
+        </div>
+       <img id="logo" src="nysl_logo.png">
+       <nav>
+        <ul id="style-ul">
+            <li id="home"><a href="home.html">Home</a></li>
+            <li id="about"><a href="about.html">About NYSL </a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+            <li id="rules"><a href="rules.html">Rules</a></li>
+            <li id="gameinfo"><a href="gameinfo.html">Game Info</a></li>
+            <li id="registration"><a href="registration.html">Registration</a></li>
+        </ul>
+    </nav>
+     <div id="scroll">
+       <form method="get" action="show_data.html" id="formulario" onsubmit="return validar()">
+                 <input type="First Name" id="firstname" name="First_Name" value="" placeholder="First Name.." required>
+                 <input type="Last Name" id="lastname" name="Last_Name" value="" placeholder="Last name..">
+                 <input type="Street Address" id="streetaddress" name="Street_Adress" value="" placeholder="Street Adress..">
+                 <input type="city" id="city" name="city" value="" placeholder="City..">
+                 <input type="Zip Code" id="zipcode" name="Zip_Code" value="" placeholder="Zip Code..">
+                 <input type="Date" id="date" name="Date" value="" placeholder="Date..">
+                 <div class="gender">
+                 <li><strong>Gender:</strong><input type="radio" name="gender" value="">Male
+                 <input type="radio" name="gender" value="">Female
+                 </li>
+                  <div class="grade">
+                    <p><strong>Grade:</strong></p>
+                     <li>1st</li><input type="radio" name="Grade" value="1st">
+                     <li>2nd</li><input type="radio" name="Grade" value="2nd">
+                     <li>3rd</li><input type="radio" name="Grade" value="3rd">
+                     <li>4th</li><input type="radio" name="Grade" value="4th">
+                     <li>5th</li><input type="radio" name="Grade" value="5th">
+                     </div>
+                 </div>
+                 <input type="Parent/Guardian" id="parentguardian" name="Parent_or_Guardian" value="" placeholder="Parent/Guardian..">
+                 <input type="Contact Phone" id="phone" name="Contact_Phone" value="" placeholder="Contact Phone..">
+                 <input type="Contact e-mail" id="contactemail" name="Contact_Email" value="" placeholder="Contact e-mail..">
+                 
+                 <h2 class="ElementarySchool">Which elementary schools do you live near?</h2>
+                     <h3>First Closest School</h3>
+                     <select>
+                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                     <option value="Greenbay">Greenbay</option>
+                     <option value="Howard A Yeager">Howard A Yeager</option>
+                     <option value="Marjorie P Hart">Marjorie P Hart</option>
+                     <option value="North Elementary">South Elementary</option>
+                     <option value="Howard A Yeager">South Elementary</option>
+                     </select>
+                    <h3>Second Closest School</h3>
+                     <select>
+                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                     <option value="Greenbay">Greenbay</option>
+                     <option value="Howard A Yeager">Howard A Yeager</option>
+                     <option value="Marjorie P Hart">Marjorie P Hart</option>
+                     <option value="North Elementary">South Elementary</option>
+                     <option value="Howard A Yeager">South Elementary</option>
+                     </select>
+                     <h2 class="positionfavorite">What position(s) do you normally play?</h2>
+                     <div class="radio1">
+                     <li>Forward</li><input type="checkbox" name="Position" value="Forward" checked>
+                     <li>Defense</li><input type="checkbox" name="Position" value="Defense">
+                     <li>Midfield</li><input type="checkbox" name="Position" value="Midfield">
+                     <li>Goalkepper</li><input type="checkbox" name="Position" value="Goalkepper">
+                    </div>
+                     <h2 class="positionfavorite">What position(s) do you want to play?</h2>
+                     <div class="radio2">
+                     <li>Forward</li><input type="checkbox" name="Position_Wanted" value="Forward" checked>
+                     <li>Defense</li><input type="checkbox" name="Position_Wanted" value="Defense">
+                     <li>Midfield</li><input type="checkbox" name="Position_Wanted" value="Midfield">
+                     <li>Goalkepper</li><input type="checkbox" name="Position_Wanted" value="Goalkepper">
+                     </div>
+                     <div class="uniform"> 
+                         <input name="cbilibros" id="haveUniform" onclick="CompruebaCheck()" type="checkbox"/><strong>Already Have a Uniform.</strong>
+                     </div>
+                     <fieldset id="cheked">
+                     <h3>Jersey Size</h3>
+                     <div class="jerseysize">
+                     <li>Youth Small</li><input type="radio" name="Jersey_Size" value="YouthSmall">
+                     <li>Youth Medium</li><input type="radio" name="Jersey_Size" value="YouthMedium">
+                     <li>Youth Large</li><input type="radio" name="Jersey_Size" value="YouthLarge">
+                     <li>Small</li><input type="radio" name="Jersey_Size" value="Small">
+                     <li>Medium</li><input type="radio" name="Jersey_Size" value="Medium">
+                     <li>Large</li><input type="radio" name="Jersey_Size" value="Large">
+                     <li>ExtraLarge</li><input type="radio" name="Jersey_Size" value="ExtraLarge">
+                    </div>
+                    
+                     <h3>Shorts Size</h3>
+                     <div class="shortssize">
+                     <li>Youth Small</li><input type="radio" name="Shorts_Size" value="YouthSmall">
+                     <li>Youth Medium</li><input type="radio" name="Shorts_Size" value="YouthMedium">
+                     <li>Youth Large</li><input type="radio" name="Shorts_Size" value="YouthLarge">
+                     <li>Small</li><input type="radio" name="Shorts_Size" value="Small">
+                     <li>Medium</li><input type="radio" name="Shorts_Size" value="Medium">
+                     <li>Large</li><input type="radio" name="Shorts_Size" value="Large">
+                     <li>ExtraLarge</li><input type="radio" name="Shorts_Size" value="ExtraLarge">
+                    </div>
+                    </fieldset>
+                    <div>
+                    <h2>Permission to Play</h2>
+                    
+                    <p class="article">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the &quot;League&quot;
+accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+sponsored activities, which transportation.
+By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the
+cancellation policy and agree to its terms. </p>
+                   <div class="sign">
+                    <input type="Signature" name="Signature" value="" placeholder="Signature..">
+                    <input type="Date" name="Date" value="Date" placeholder="Date..">
+                    <input type="submit" value="Submit">
+                    
+                   </div>
+                    </div>
+                 </form>    
+               </div>
+                </div>
+      </body>
+</html>

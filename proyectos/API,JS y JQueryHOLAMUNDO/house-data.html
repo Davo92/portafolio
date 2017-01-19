@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <link rel="stylesheet" href="data.css">
+        <script src="NYT-congress-113-senate.js"></script>
+        <script>//document.getElementById('senatedata').innerHTML = JSON.stringify(data,null,2);</script>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div id="barranavegacion">
+                <img src="Logo.jpg" class="img-responsive" style="margin-top:-15px;">
+                <a href="mailto:info@tgif.net" class="pull-right"><img class="sobre" src="sobre.jpg">info@tgif.net</a>
+
+            </div>
+            <ul class="nav nav-pills">
+                <a href="#" class="navbar-brand"></a>
+                <li><a href="home-data.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Congress 113<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">                  <a  a href="house-data.html"><li>House</li></a>
+                        <a  a href="senate-data.html"><li>Senate</li></a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Attendance<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">                  <a  a href="house_senate-attendance-starter-page2.html"><li>House</li></a>
+                        <a  a href="senate_house-attendance-starter-page.html"><li>Senate</li></a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Party Loyalty<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">                  <a  a href="house_senate-party-loyalty-starter-page2.html"><li>House</li></a>
+                        <a  a href="senate_house-party-loyalty-starter-page.html"><li>Senate</li></a>
+                    </ul>
+                </li>
+            </ul>  
+            <div>
+                <form name="congress-filter" id="FilterForm" action="" method="">
+
+                    <div id="party_filter" class="container">
+                        <strong>Filter by Party: </strong><label for="Republican"> Republican: <input name="filterStatus" value="R" type="checkbox"/></label>
+                        <label for="Democrat">Democrat: <input name="filterStatus" value="D" type="checkbox"/></label>
+                        <label for="Meat">Independent: <input name="filterStatus" value="I" type="checkbox"/></label>
+                    </div>
+                </form>
+                <label id="state_filter" class="container">Filter by State
+                    <select id="stateOption">
+                        <option>-Your State-</option>
+                    </select>
+                </label>
+            </div>
+            <article>
+                <h1>Congressment</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dius aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offlcia deserunt mollit anim id est laborum.</p>
+            </article>
+
+            <table id="senatedata" class="table tablesorter" cellspacing="1">
+                <thead>
+                    <tr id="titulos">
+                        <td class="titles">Full Name</td>
+                        <td class="titles">Party</td>
+                        <td class="titles">State</td>
+                        <td class="titles">Seniority</td>
+                        <td class="titles">Votes</td> 
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                </tbody>
+            </table>
+            <footer>
+                <p id="derechos">© 2016 TGIF | All Rights Reserved.</p>
+            </footer>
+
+        </div>
+        <script language="javascript" src="data.js"></script>
+    </body>
+</html>

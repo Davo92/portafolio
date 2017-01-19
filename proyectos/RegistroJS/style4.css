@@ -1,0 +1,113 @@
+* { margin: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 200px;
+    }
+  
+.titulo {
+    display: inline;
+    background-color: rgba(225, 227, 229, 0.91)
+}
+
+.title2 { display: inline; background-color: rgba(255, 245, 238, 0.44);
+          margin-left: 10px;
+}
+
+.principal {
+    text-align: justify;
+}
+.fifa {
+  text-align: center;
+  margin-right: 100px;
+}
+.principal > li {
+      margin-bottom: 20px;
+}
+.principal h4 {
+  text-align: left;
+  margin: 0;
+  display: inline-block;
+}
+.principal .teambench li {
+      list-style-type: square;
+}
+
+.principal ul {
+  list-style-type: square;
+}
+.principal ol li {
+  margin-bottom: 10px;
+}
+.principal ol ol li {
+      list-style-type: lower-latin;
+      margin-bottom: 0;
+}
+.principal ul ol li {
+  margin-bottom: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    height: 100px;   
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#firstphoto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+}
+#firstphoto img {
+    height: 50%;
+    width: 70%;
+}
+
+body { 
+    background-image: url("futbol-generic-entry-point.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ol, ul, l, p, h1, h2, h3, h4 {
+    margin-right: 5px;
+    padding-bottom: 2px
+}
+
+#scroll {
+    height: 400px;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 17px;
+    
+}
+
+nav li {
+    font-size: 30px;
+    background-color: lightgreen;
+    border-radius: 2em; 
+    border: 2px solid black;
+    padding: 8px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#rules {
+    background-color: silver;
+}
+
+li a:link, li a:visited {
+    text-decoration: none
+}

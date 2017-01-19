@@ -1,0 +1,139 @@
+* { margin: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 200px;
+    }
+  
+.titulo {
+    display: inline;
+    background-color: rgba(225, 227, 229, 0.91)
+}
+
+.fifa {
+  text-align: center;
+  margin-right: 100px;
+}
+
+#logo {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    height: 100px;   
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#firstphoto {
+        display: flex;
+    width: 95%;
+    
+}
+#firstphoto img {
+    height: 50%;
+    width: 70%;
+}
+
+body { 
+    background-image: url("futbol-generic-entry-point.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#scroll {
+    margin-top: 80px;
+    height: 370px;
+    width: 880px;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 17px;
+    
+}
+
+nav li {
+    font-size: 30px;
+    background-color: lightgreen;
+    border-radius: 2em; 
+    border: 2px solid black;
+    padding: 8px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+#registration {
+    background-color: silver;
+}
+
+li a:link, li a:visited {
+    text-decoration: none
+}
+
+form {
+    margin-top: 20px;
+    margin: 10px;
+    
+}
+    
+input { 
+    margin: 18px;
+    font-size: 15px;
+    align-content: space-around;}
+
+.radio1, .radio2, .jerseysize, .shortssize, .grade {
+    display: flex;
+    
+}
+    
+
+li { list-style-type: none;
+}
+
+h2, h3 {
+    margin: 3px; 
+    background-color: rgba(255, 255, 255, 0.42);
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+h1 { 
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    font-size: 50px;
+    font-family: cursive;
+    color: rgb(214, 69, 69);
+    border-bottom: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.34);
+border-radius: 5px;}
+
+.gender { align-content: space-between;
+    
+}
+
+.article {
+    background-color: rgba(54, 159, 173, 0.44);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.grade p { margin-left: 2px;
+           background-color: rgba(166, 206, 56, 0.42);
+           border: 1px solid black;
+           border-radius: 5px}
+
+div li strong {
+     margin-left: 2px;
+           background-color: rgba(166, 206, 56, 0.42);
+           border: 1px solid black;
+           border-radius: 5px
+}

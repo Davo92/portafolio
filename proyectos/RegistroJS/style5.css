@@ -1,0 +1,124 @@
+* { margin: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 200px;
+    }
+h2 {
+  text-align: center;
+  font-size: 25px;
+    width: 22%;
+    background-color: rgba(240, 248, 255, 0.42);
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+li a:link, li a:visited {
+    text-decoration: none;
+}
+#gameinfo {
+    background-color: silver;
+}
+#logo {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    height: 100px;   
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+#firstphoto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+#firstphoto img {
+    height: 50%;
+    width: 70%;
+}
+
+body { 
+    background-image: url("futbol-generic-entry-point.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scroll {
+    height: 312px;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 3px solid black;
+    border-radius: 20px;
+    font-size: 17px;
+    width: 45%;
+    padding: 5px;
+}
+
+nav li {
+    font-size: 30px;
+    background-color: lightgreen;
+    border-radius: 2em; 
+    border: 2px solid black;
+    padding: 8px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+  font-style: italic;
+  text-align: center;
+  width: 9%;
+  background-color: rgba(240, 248, 255, 0.42);
+  border: 1px solid black;
+  border-radius: 10px;
+    
+}
+table {
+  margin-bottom: 20px;
+}
+.September th, .October th {
+  text-decoration: underline;
+    background-color: rgba(240, 248, 255, 0.52)
+}
+th, tr:nth-child(odd) {
+  width: 15%;
+  background-color: white;
+}
+.September {
+  text-align: center;
+}
+
+.October {
+  text-align: center;
+}
+.game_location {
+  width: 90%;
+}
+.anotacion {
+  text-decoration: underline;
+  font-style: italic;
+  text-align: center;
+}
+
+tr:nth-child(2n) {
+    background-color: lightslategray
+}
+
+td { 
+    border: 1px solid black;
+    border-radius: 3px;}
+
+.maps {
+  width: 100%;
+  margin-top: 4%;
+    text-align: center;
+    margin-bottom: 30px;
+}

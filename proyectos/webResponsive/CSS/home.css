@@ -1,0 +1,381 @@
+body {
+    background: rgba(0, 0, 0, 0.36) !important;
+    margin:0;    
+}
+
+/*cabecera de NYSL*/
+
+#logo{
+    width: 80px;
+    padding:0;
+    margin-bottom: 0;
+}
+
+#head{
+    margin-top: auto;
+
+}
+#titulo {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(green, #faff79);
+    height: 12vh;
+}
+
+
+.logo{
+    width: 80px;
+    padding:0;
+    margin-bottom: 0;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+#myTopnav {
+    margin: 0;
+}
+
+#containerFluid {
+    background: #333
+}
+
+
+/*PIE DE PAGINA*/
+footer{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#derechos{
+    text-align: center;
+}
+
+#partidos{
+    display:flex;
+    justify-content: space-around;
+}
+
+.vs{
+    display:flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Oxygen', sans-serif;
+}
+.escudos {
+    display:flex;
+    justify-content: center;
+    width: 6vh;
+    height: 14vh;
+
+}
+
+
+.nombres {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.botonAcordeon { 
+    background: darkgreen !important;
+    border: 1px solid black !important;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+.datosPartido {
+    border-bottom: 1px solid black;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+
+.google-maps {
+position: relative;
+padding-bottom: 75%; 
+height: 0;
+overflow: hidden;
+}
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+.ubi{
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Oxygen', sans-serif;
+    width: 50%;
+    
+    
+}
+
+td{ border-bottom:1px solid black;
+font-family: 'Oxygen', sans-serif;}
+
+.partidosColor {
+    background: rgba(141, 136, 136, 0.46) !important;
+}
+
+.panel-default>.panel-heading {
+    background: rgba(127, 224, 47, 0.4) !important;
+    border: 1px solid black;
+}
+
+.u{
+    font-weight: bold;
+}
+
+
+.pagPrincipal {
+    height: 160px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#home1{
+    background-color: rgba(61, 61, 216, 0.79);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home2{
+    background-color: rgba(32, 193, 32, 0.66);
+     display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home3{
+    background-color: rgba(240, 119, 33, 0.75);
+     display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.fotoIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+   
+    
+}
+
+.menuPrincipal{
+    font-size: 10.5px;
+}
+
+/*
+.and{
+    display: flex;
+    align-content: center;    
+}*/
+
+
+.general{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-bottom: 1px solid black;
+    font-family: 'Oxygen', sans-serif;
+    
+    
+}
+
+.fotoGeneral{
+    height: 170px;
+    width: 100%;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url(green-abstract-background-22527441.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+#fotiprin {
+    height: 120px;
+    width: 120px;
+    
+}
+
+#posiLogo {
+    height: 170px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*                               PHOTOS AND CONTACT                       */
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.carru {
+    border-bottom: 1px solid black;
+    display:flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+.telf {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+
+
+    }
+
+.boton {
+    width: 100%;
+    border-radius: 10px;
+    background-color: green;
+    list-style-type: none;
+    padding:20px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.boton2 {
+    
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(13, 13, 196, 0.69);
+    list-style-type: none;
+    padding: 5px;
+}
+
+a:link, a:visited{
+    color: white;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.llamada {
+    display:flex;
+    justify-content: center;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.mail {
+    display:flex;
+    justify-content: center;
+    margin-left: 5px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#demo, #demo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-left: 10px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.carrusell {
+    width: 460px !important;
+    height: 245px !important;
+}
+
+#textHere, #nameHere {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#comment {
+    margin-left: 10px;
+    background-color: rgba(174, 28, 193, 0.71);
+    border-radius: 5px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.especial{
+    background-color: skyblue !important;
+    color: white !important;
+    margin-left: 10px;
+    border: 1px solid #2214c1;
+    padding: 2px;
+    border-radius: 5px;
+    width: 95%;
+    height: 100px;
+    margin-bottom: 2px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.especial2{
+    
+    background-color: rgba(219, 127, 21, 0.92) !important;
+    color: white !important;
+    margin-left: 10px;
+    border: 1px solid #2214c1;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    display: inline-block;
+    padding: 5px;
+    padding-right: 12px;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+
+#sobre {
+    height: 50%;
+}
+
+
+
+
+
+
+
+#entrada {
+    background-color: blue;
+}
+
+.rejas {
+    display:flex;
+    flex-direction: row;
+    height: 50%;
+    width: 50%;
+}
+
+
