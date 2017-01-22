@@ -50,32 +50,52 @@
             <!-- TERMINA LA NAVBAR -->
 
             <!-- EMPIEZA EL HEADER -->
-            <header id="header" class="container-fluid">
-                <div class="contactame">
-                    <h1 id ="principal" class="titulo">CONTACTAME</h1>
-                    <div class="article">
-                        <p>
-                            Si te apetece contactarme puedes hacerlo escribiendo a: <a href="mailto:david.romero.araez.92@gmail.com">david.romero.araez.92@gmail.com.</a> Si te quedan ganas de conocerme mejor, te recomiendo que visites:
-                        </p>
+            <div id="header" class="container-fluid">
+                 <h1 id ="principal" class="titulo">CONTACTAME</h1>
+                  <p>
+                                Si deseas contactar conmigo puedes hacerlo sin compromiso, escribiendo a: <a href="mailto:david.romero.araez.92@gmail.com" id="subrayar">david.romero.araez.92@gmail.com.</a> Si te quedan ganas de conocerme mejor, saber más de mí. 
+                            <p id="acercar">Te recomiendo que visites:</p>
+                            </p>
+                <div class="prueba">
+                    <div class="contactame">
+                        <div class="article">
                         <h2 class="h2"><img class="icono" src="/imagenes/github-logo.png" alt="github">GitHub:</h2>
                         <p class="frases"><a href="https://github.com/Davo92">- https://github.com/Davo92</a>
                         </p>
                         <h2 class="h2"><img class="icono" src="/imagenes/linkedin.png" alt="linkedIn">LinkedIn:</h2>
-                        <p class="frases"><a href="https://www.linkedin.com/in/davidroar92">- https://www.linkedin.com/in/davidroar92</a></p>
+                        <p class="frases"><a href="https://www.linkedin.com/in/davidroar92">- https://www.linkedin.com/davidroar92</a></p>
                     </div>
                 </div>
-            </header>
+                
+                <div class="flex">
+                    <form method="post" class="formulario" action="enviarDatos.php" id="myform" onsubmit="return enviarContacto()">
+                        <p>Name:</p>
+                        <input type="Name" id="nombre" class="formulario" name="nombre" value="" placeholder="Nombre.."><br>
+                        <p>E-mail:</p>
+                         <input type="Contact e-mail" id="email" name="mail" value="" placeholder="E-mail.."><br><br>
+                        <p>Comment:</p>
+                        <input type="text" class="formulario" name="comentario" size="35" id="comentario"><br><br>
+                        <input type="submit" class="formulario" value="Sumbit">
+                        <input type="reset" class="formulario" value="Reset">
+                    </form>
+                </div>
+            </div>
         </div>
-        <!-- TERMINA EL HEADER -->
+        <br>
+        <br>
+        <br>
+
+        </div>
+    <!-- TERMINA EL HEADER -->
 
 
-        <!-- EMPIEZA EL FOOTER -->
+    <!-- EMPIEZA EL FOOTER -->
 
-        <footer id="footer" class="container-fluid">
-            <p>COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
-        </footer>
+    <footer id="footer" class="container-fluid">
+        <p>COPYRIGHT © 2017 DAVID ROMERO ARAEZ</p>
+    </footer>
 
-        <!-- TERMINA EL FOOTER -->
-        <script src="JS/home.js"></script>
+    <!-- TERMINA EL FOOTER -->
+    <script src="JS/portafolio.js"></script>
     </body>
 </html>
