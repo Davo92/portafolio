@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="CSS/blog.css">
         <link rel="stylesheet" href="/CSS/portafolio.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,34 +53,40 @@
 
             <!-- EMPIEZA EL HEADER -->
             <div id="header" class="container-fluid">
-                 <h1 id ="principal" class="titulo">CONTACTAME</h1>
-                  <p>
-                                Si deseas contactar conmigo puedes hacerlo sin compromiso, escribiendo a: <a href="mailto:david.romero.araez.92@gmail.com" id="subrayar">david.romero.araez.92@gmail.com.</a> Si te quedan ganas de conocerme mejor, saber más de mí. 
-                            <p id="acercar">Te recomiendo que visites:</p>
-                            </p>
-                <div class="prueba">
-                    <div class="contactame">
-                        <div class="article">
+                <h1 id ="principal" class="titulo">CONTACTAME</h1>
+                <p>
+                    Si deseas contactar conmigo puedes hacerlo sin compromiso, escribiendo a: <a href="mailto:david.romero.araez.92@gmail.com" id="subrayar">david.romero.araez.92@gmail.com.</a> Si te quedan ganas de conocerme mejor, saber más de mí. 
+                <p id="acercar">Te recomiendo que visites:</p>
+                </p>
+            <div class="prueba">
+                <div class="contactame">
+                    <div class="article">
                         <h2 class="h2"><img class="icono" src="/imagenes/github-logo.png" alt="github">GitHub:</h2>
                         <p class="frases"><a href="https://github.com/Davo92">- https://github.com/Davo92</a>
                         </p>
                         <h2 class="h2"><img class="icono" src="/imagenes/linkedin.png" alt="linkedIn">LinkedIn:</h2>
-                        <p class="frases"><a href="https://www.linkedin.com/in/davidroar92">- https://www.linkedin.com/davidroar92</a></p>
+                        <p class="frases"><a href="https://www.linkedin.com/in/davidroar92">- www.linkedin.com/davidroar92</a></p>
                     </div>
                 </div>
-                
+
                 <div class="flex">
-                    <form method="post" class="formulario" action="enviarDatos.php" id="myform" onsubmit="return enviarContacto()">
+                    <form method="post" class="formulario" action="" id="myform" onsubmit="writeDetails(); return false;">
                         <p>Name:</p>
-                        <input type="Name" id="nombre" class="formulario" name="nombre" value="" placeholder="Nombre.."><br>
+                        <input type="text" id="nombre" class="formulario" name="nombre" value="" placeholder="Nombre.." required>
                         <p>E-mail:</p>
-                         <input type="Contact e-mail" id="email" name="mail" value="" placeholder="E-mail.."><br><br>
+                        <input type="text" id="email" name="mail" value="" placeholder="E-mail.." required>
+                        <p>Empresa:</p>
+                        <input type="text" id="empresa" name="empresa" value="" placeholder="Empresa..">
                         <p>Comment:</p>
-                        <input type="text" class="formulario" name="comentario" size="35" id="comentario"><br><br>
+                        <input type="text" class="formulario" name="comentario" size="35" id="comentario" placeholder="Escribe tú comentario aquí.." required><br><br>
                         <input type="submit" class="formulario" value="Sumbit">
                         <input type="reset" class="formulario" value="Reset">
                     </form>
+                    
+
+
                 </div>
+                    <div id="demo"></div>
             </div>
         </div>
         <br>
@@ -97,6 +104,10 @@
     </footer>
 
     <!-- TERMINA EL FOOTER -->
+     <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="blog.js"></script>
     <script src="JS/portafolio.js"></script>
+    <script src="JS/blog.js"></script>
     </body>
 </html>

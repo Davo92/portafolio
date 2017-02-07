@@ -1,0 +1,36 @@
+.especial{
+    background-color: #2798c6 !important;
+    color: white !important;
+    margin-left: 10px;
+    border: 1px solid #ffffff;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    font-family: 'Oxygen', sans-serif;
+    min-width: 30%;
+    max-width: 350px;
+    flex-wrap: nowrap;
+}
+
+
+.especial2{
+    
+    background-color: rgba(57, 59, 57, 0.92) !important;
+    color: white !important;
+    margin-left: 10px;
+    border: 1px solid #2214c1;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    display: inline-block;
+    padding: 5px;
+    padding-right: 12px;
+    font-family: 'Oxygen', sans-serif;
+    
+}
+
+#demo{
+    margin-top: -20px;
+    margin: auto;
+}
+

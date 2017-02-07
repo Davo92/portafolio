@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculadora JavaScript</title>
+</head>
+<body>
+   <h1>Calculadora con JavaSript</h1>
+   <div id="fondoCalc">
+    <form name="for" action="">
+    <table>
+        <tr>
+            <td colspan="5">
+                <input type="text" name="valores" class="pantalla" id="valores" onkeypress="return soloNumeros(event)">
+            </td>
+        </tr>
+        <tr>
+                <td class="botones"><input type="button" value="7" onclick="retornarValor(value)"></td>
+                <td class="botones"><input type="button" value="8" onclick="retornarValor(value)"></td>
+                <td class="botones"><input type="button" value="9" onclick="retornarValor(value)"></td>
+                <td class="botones2"><input type="button" value="+" onclick="comprobar(value)"></td>
+                <td class="botones2"><input type="button" value="-" onclick="comprobar(value)"></td>
+        </tr>
+        
+         <tr>
+            
+                <td class="botones"><input type="button" value="4" onclick="retornarValor(value)"></td>
+                <td class="botones"><input type="button" value="5" onclick="retornarValor(value)"></td>
+                <td class="botones"><input type="button" value="6" onclick="retornarValor(value)"></td>
+                <td class="botones2"><input type="button" value="*" onclick="comprobar(value)"></td>
+                <td class="botones2"><input type="button" value="/" onclick="comprobar(value)"></td>
+        </tr>
+        
+         <tr>
+                <td class="botones"><input type="button" value="1" onclick="retornarValor(value)"></td>
+                <td class="botones"><input type="button" value="2" onclick="retornarValor(value)"></td>
+                <td class="botones"><input type="button" value="3" onclick="retornarValor(value)"></td>
+                <td class="botones2"><input type="button" value="<-" onclick="eliminarNum()"></td>
+                <td class="botones2"><input type="button" value="C" onclick="eliminarTodo()"></td>
+        </tr>
+        
+     
+        
+        <tr>
+                <td class="botones" colspan="2"><input type="button" value="0" onclick="retornarValor(value)"></td>
+                <td></td> 
+                <td class="botones2" colspan="2"><input type="button" value="=" onclick="calcular()"></td>
+        </tr>
+    </table>
+    </form>
+    </div>
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>

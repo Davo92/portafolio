@@ -1,0 +1,84 @@
+/*#mostrar{
+    background:#98bf21;
+    height: 25%;
+    width: 25%;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+}*/
+
+.hide{
+    
+}
+
+
+html{
+  box-sizing:border-box;
+}
+
+body {
+	margin:0px;
+  padding:0px;
+  font-family: 'Teko','Arial',Sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  background:hsla(0, 0, 20%, 1);
+  padding:2vw;
+}
+.full{
+  width:100%;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:6vw;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  height: 25vmax;
+  &:nth-of-type(1n+6){
+    margin-top:1.5rem;
+  }
+}
+
+
+
+.window {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  font-size:3vw;
+  height: 75%;
+  margin:0 0 3%;
+  padding: 2vw;
+  background: #fff;
+  box-shadow:0 .125vw 1px 1px hsla(0, 0%, 15%, 1);
+  color:hsla(0,0,100%,1);
+  letter-spacing:1px;
+}
+
+@media only screen and (max-width:480px){
+  .window{
+    font-size:5vw;
+  }
+}
+
+
+button {
+  border: none;
+  background: hsla(0, 0%, 80%, 1);
+  height: 20%;
+  font-family: 'Teko';
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: #000000
+
+}
+
+div.toggle .window{
+  background: #5a99fd;
+}
