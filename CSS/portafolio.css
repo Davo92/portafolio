@@ -454,14 +454,17 @@ article p{
 /*TITULOS, PARRAFOS, SOBRETODO DE LA HOME*/
 
 @media screen and (max-width: 676px) {
-    #welcome h1, h1{
+    #welcome h1{
         font-size: 52px;
     }
     #welcome h4{
         font-size: 12px;
-        margin-right: -25px;
-        margin-left: -25px;
-
+        margin-right: -38px;
+        margin-left: -38px;
+    }
+    .titulo{
+        font-size: 35px;
+        
     }
     p{
         font-size: 12px;
@@ -529,4 +532,9 @@ article p{
 }
 #nombre {
     margin-bottom: -5px;
+}
+
+#msjTit {
+    margin-left: 10px;
+    border-bottom: 1px solid white;
 }

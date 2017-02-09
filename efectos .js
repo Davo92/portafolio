@@ -29,7 +29,7 @@ $(document).ready(function(){
     function botones(){
         //CAMBIAR EL TEXTO DEL "BUTTON" AL HACER CLICK DE MOSTRAR/OCULTAR //
         $("#hide").click(function(){
-            $("#hide").text(($("#hide").text() ==  'Mostrar') ? 'Ocultar':'Mostrar');
+            $("#hide").text(($("#hide").text() ==  'Slide Arriba') ? 'Slide Abajo':'Slide Arriba');
         });
 
 

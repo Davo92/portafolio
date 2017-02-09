@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="blog.css">
+    <title>BLOG FIREBASE</title>
+</head>
+<body>
+   
+    <div class="flex">
+        <form method="post" class="formulario" action="" id="myform" onsubmit="writeDetails(); return false;">
+            <p>Name:</p>
+            <input type="text" id="nombre" class="formulario" name="nombre" value="" placeholder="Nombre..">
+            <p>E-mail:</p>
+            <input type="text" id="email" name="mail" value="" placeholder="E-mail..">
+            <p>Empresa:</p>
+            <input type="text" id="empresa" name="empresa" value="" placeholder="Empresa.."><br>
+            <p>Comment:</p>
+            <input type="text" class="formulario" name="comentario" size="35" id="comentario"><br><br>
+            <input type="submit" class="formulario" value="Sumbit">
+            <input type="reset" class="formulario" value="Reset">
+        </form>
+        
+        
+        <div id="demo"></div>
+        <div id="demo2"></div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <!-- <script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="blog.js"></script>
+    
+</body>
+</html>

@@ -49,6 +49,7 @@ body {
 .window {
   display:flex;
   justify-content:center;
+  flex-wrap: 
   align-items:center;
   text-align:center;
   font-size:3vw;
@@ -82,3 +83,5 @@ button {
 div.toggle .window{
   background: #5a99fd;
 }
+
+

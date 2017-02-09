@@ -45,7 +45,6 @@ function writeDetails() {
 
 
 firebase.database().ref('details').on('value', function(snapshot) {
-    
 
     // mostrar los detalles en la pagina
     var allDetails = snapshot.val();
@@ -54,8 +53,46 @@ firebase.database().ref('details').on('value', function(snapshot) {
         var nombreMail = $("#demo");
         nombreMail.append("<div class='especial2'>"+allDetails[key].name + ": " + "<br>" + allDetails[key].email + "</div>");
         comentario.append("<div class='especial'>"+allDetails[key].comentario + "</div><br>");
-    comentario.empty();
         
     
     }
 });
+
+//Cambia los valores con REF, para modificarlos por los introducidos por el usuario//
+function writeUserData(userId, name, email, empresa, comentario) {
+
+    firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        empresa: empresa,
+        comeentario: comentario,
+    });
+}
+
+// 
+function writeNewPost(uid, username, picture, title, body) {
+    // A post entry.
+    var postData = {
+        author: username,
+        uid: uid,
+        body: body,
+        title: title,
+        starCount: 0,
+        authorPic: picture
+    };
+
+
+    // Get a key for a new Post.
+    var newPostKey = firebase.database().ref().child('posts').push().key;
+
+    // Write the new post's data simultaneously in the posts list and the user's post list.
+    var updates = {};
+    updates['/posts/' + newPostKey] = postData;
+    updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+    firebase.database().ref().update(updates);
+
+    document.write("Enviado satisfactoriamente");
+
+    return false; // en el on submit, inpida el refresco de página al enviar el formulario //
+}
+
