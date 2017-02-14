@@ -33,33 +33,43 @@ body {
   font-size:6vw;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+    padding: 15px;
+    
+}
+
 
 .box {
   display: flex;
   flex-direction: column;
-  width: 22%;
-  height: 25vmax;
-  &:nth-of-type(1n+6){
-    margin-top:1.5rem;
-  }
+  width: 240px;
+  height: 208px;
+    padding: 5px
 }
-
 
 
 .window {
   display:flex;
   justify-content:center;
-  flex-wrap: 
+  flex-wrap: nowrap;
   align-items:center;
   text-align:center;
   font-size:3vw;
-  height: 75%;
+  height: 85%;
   margin:0 0 3%;
   padding: 2vw;
   background: #fff;
-  box-shadow:0 .125vw 1px 1px hsla(0, 0%, 15%, 1);
+  box-shadow:  0.125vw 4px 2px hsla(0, 0%, 25%, 1);
   color:hsla(0,0,100%,1);
   letter-spacing:1px;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 @media only screen and (max-width:480px){
@@ -74,14 +84,43 @@ button {
   background: hsla(0, 0%, 80%, 1);
   height: 20%;
   font-family: 'Teko';
-  font-size: 3vw;
+  font-size: 25px;
   text-transform: uppercase;
-  color: #000000
+  color: #000000;
+    border-radius: 5px;
+    border: 1px solid black;
 
 }
 
-div.toggle .window{
+.window{
   background: #5a99fd;
 }
 
+.palabra{
 
+position: absolute;
+    margin: 0;
+}
+
+#hide4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones{
+    width: 100%;
+}
+
+/*cambios de colores de os bloques*/
+
+#cambio2{
+    background: #ce9630;
+}
+
+#cambio3{
+    background: #249a24;
+}
+
+#cambio4{
+    background: #c14057;
+}
