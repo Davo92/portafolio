@@ -60,7 +60,7 @@ body {
   flex-wrap: nowrap;
   align-items:center;
   text-align:center;
-  font-size:3vw;
+  font-size:2vw;
   height: 85%;
   margin:0 0 3%;
   padding: 2vw;
@@ -74,7 +74,7 @@ body {
 
 @media only screen and (max-width:480px){
   .window{
-    font-size:5vw;
+    font-size:4vw;
   }
 }
 
@@ -84,7 +84,7 @@ button {
   background: hsla(0, 0%, 80%, 1);
   height: 20%;
   font-family: 'Teko';
-  font-size: 25px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #000000;
     border-radius: 5px;
@@ -105,10 +105,16 @@ position: absolute;
 #hide4{
     display: flex;
     justify-content: space-between;
+    margin-top: 8px;
 }
 
 .botones{
     width: 100%;
+}
+
+.colorear{
+    color: #65d02d;
+    border-bottom: 1px solid #65d02d;
 }
 
 /*cambios de colores de os bloques*/
@@ -123,4 +129,9 @@ position: absolute;
 
 #cambio4{
     background: #c14057;
+    margin-bottom: 1px;
+}
+
+#cambio5{
+    background: gray;
 }
